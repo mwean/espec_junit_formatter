@@ -17,6 +17,19 @@ Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_do
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/espec_junit_formatter](https://hexdocs.pm/espec_junit_formatter).
 
+## Usage
+
+To use this formatter, add this to your `spec_helper.exs` file:
+
+```elixir
+ESpec.configure fn(config) ->
+  config.formatters [
+    {ESpec.JUnitFormatter, %{out_path: "some/path/junit.xml"}}
+  ]
+end
+
+```
+
 ## Acknowledgements
 
 This draws heavily from [victorolinasc/junit-formatter](https://github.com/victorolinasc/junit-formatter)
