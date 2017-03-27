@@ -19,8 +19,7 @@ defmodule ESpec.JUnitFormatter do
     {:noreply, opts}
   end
 
-  def handle_cast({:example_finished, example}, opts) do
-    IO.inspect example
+  def handle_cast({:example_finished, _example}, opts) do
     {:noreply, opts}
   end
 
