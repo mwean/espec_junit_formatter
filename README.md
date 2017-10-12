@@ -8,7 +8,7 @@ Add `espec_junit_formatter` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:espec_junit_formatter, "~> 0.1.0"}]
+  [{:espec_junit_formatter, "~> 0.1.1"}]
 end
 ```
 
